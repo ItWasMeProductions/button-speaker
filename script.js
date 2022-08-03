@@ -8,8 +8,7 @@ window.onload = () => {
 
     inputText.addEventListener('input', () => UpdateButtonText(inputText, buttonText));
 
-    //button.addEventListener('click', () => Speak(inputText));
-    button.addEventListener('click', () => UpdateSizeInfo(document.getElementById('device-size')));
+    button.addEventListener('click', () => Speak(inputText));
 }
 
 function UpdateButtonText(_text, _button) {
