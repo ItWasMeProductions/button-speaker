@@ -1,6 +1,4 @@
 window.onload = () => {
-    screen.orientation.lock('portrait');
-
     const inputText = document.getElementById('input-text');
     const buttonText = document.getElementById('button-text');
 
