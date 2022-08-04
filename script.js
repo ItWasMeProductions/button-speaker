@@ -1,11 +1,10 @@
 window.onload = () => {
-    // 
     const inputText = document.getElementById('input-text');
     const buttonText = document.getElementById('button-text');
 
     const button = document.getElementById('button');
 
-    UpdateSizeInfo(document.getElementById('device-size'));
+    //UpdateSizeInfo(document.getElementById('device-size'));
 
     inputText.addEventListener('input', () => UpdateButtonText(inputText, buttonText));
 
@@ -26,5 +25,5 @@ window.onresize = () => UpdateSizeInfo(document.getElementById('device-size'));
 
 function UpdateSizeInfo(sizeInfoText) {
     const colSize = (window.innerWidth > 1400) ? 'xxl' : (window.innerWidth > 1200) ? 'xl' : (window.innerWidth > 992) ? 'lg' : (window.innerWidth > 768) ? 'md' : (window.innerWidth > 576) ? 'sm' : 'xs';
-    sizeInfoText.innerHTML = `Width: ${window.innerWidth}, Height: ${window.innerHeight}, Column Size: ${colSize}`;
+    //sizeInfoText.innerHTML = `Width: ${window.innerWidth}, Height: ${window.innerHeight}, Column Size: ${colSize}`;
 }
