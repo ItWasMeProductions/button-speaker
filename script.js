@@ -16,6 +16,13 @@ function UpdateButtonText(_text, _button) {
 }
 
 function Speak(_text) {
+    // Interesting...
+    // $('#button').hover(
+    //     function () { $(this).css("background-color", "rgb(220, 0, 0)")},
+    //     function () { $(this).css("background-color", "red") }
+    // );
+    //('background-color', 'rgb(220, 0, 0)');
+
     var msg = new SpeechSynthesisUtterance();
     msg.text = _text.value;
     window.speechSynthesis.speak(msg);
