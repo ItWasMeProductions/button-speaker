@@ -1,4 +1,5 @@
 window.onload = () => {
+    // 
     const inputText = document.getElementById('input-text');
     const buttonText = document.getElementById('button-text');
 
