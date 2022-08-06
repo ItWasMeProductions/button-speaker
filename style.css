@@ -4,6 +4,26 @@
     box-sizing: border-box;
 }
 
+/* @media only screen and (orientation:landscape) {
+    #turn {
+        display: block;
+    }
+
+    .main-content {
+        display: none;
+    }
+}
+
+@media only screen and (orientation: portrait-primary) {
+    #turn {
+        display: none;
+    }
+
+    .main-content> {
+        display: inherit;
+    }
+} */
+
 html,
 body {
     height: 100%;

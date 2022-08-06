@@ -1,4 +1,6 @@
 window.onload = () => {
+    lock('portrait-primary');
+
     const inputText = document.getElementById('input-text');
     const buttonText = document.getElementById('button-text');
 
@@ -9,6 +11,18 @@ window.onload = () => {
     inputText.addEventListener('input', () => UpdateButtonText(inputText, buttonText));
 
     button.addEventListener('click', () => Speak(inputText));
+}
+
+function lock(orientation) {
+    // (A1) GO INTO FULL SCREEN FIRST
+    let de = document.documentElement;
+    if (de.requestFullscreen) { de.requestFullscreen(); }
+    else if (de.mozRequestFullScreen) { de.mozRequestFullScreen(); }
+    else if (de.webkitRequestFullscreen) { de.webkitRequestFullscreen(); }
+    else if (de.msRequestFullscreen) { de.msRequestFullscreen(); }
+
+    // (A2) THEN LOCK ORIENTATION
+    screen.orientation.lock(orientation);
 }
 
 function UpdateButtonText(_text, _button) {
