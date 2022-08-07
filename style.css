@@ -109,8 +109,14 @@ footer {
     } */
 }
 
+@media (max-width: 991px) and (orientation:landscape) {
+    .container {
+        width: 50%;
+    }
+}
+
 /* (min-width: 991px) and  */
-@media (orientation:landscape) {
+/* @media (orientation:landscape) {
 
     .col-1,
     .col-sm-1,
@@ -183,4 +189,4 @@ footer {
     .col-md-12 {
         width: 49.99999998%;
     }
-}
+} */
