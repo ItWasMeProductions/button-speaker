@@ -103,13 +103,14 @@ footer {
     color: black;
 }
 
-@media (max-width: 991px) and (orientation:portrait) {
+@media (min-width: 991px) and (orientation:portrait) {
     /* .col-1 {
         
     } */
 }
 
-@media (max-width: 991px) and (orientation:landscape) {
+/* (min-width: 991px) and  */
+@media (orientation:landscape) {
 
     .col-1,
     .col-sm-1,
