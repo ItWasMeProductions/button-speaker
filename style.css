@@ -116,10 +116,10 @@ footer {
 } */
 
 @media (max-width: 991px) and (orientation:landscape) {
+
     html,
     body {
         height: 100vw;
-        transform: rotate(0);
     }
 }
 
