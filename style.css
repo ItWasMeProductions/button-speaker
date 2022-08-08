@@ -109,9 +109,17 @@ footer {
     } */
 }
 
-@media (max-width: 991px) and (orientation:landscape) {
+/* @media (max-width: 991px) and (orientation:landscape) {
     .container {
         width: 50%;
+    }
+} */
+
+@media (max-width: 991px) and (orientation:landscape) {
+    html,
+    body {
+        height: 100vw;
+        transform: rotate(0);
     }
 }
 
